@@ -10,9 +10,11 @@ catid (int)
 date_time (datetime)
 
 - Tabell användardata
-Tabellnamn:
+Tabellnamn: user
 Kolumner:
-
+uid (int)
+uname (varchar)
+pwd (varchar)
 
 - Tabell kategorier
 Tabellnamn: cat
