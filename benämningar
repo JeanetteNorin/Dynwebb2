@@ -1,0 +1,23 @@
+Lista på benämningar i tabeller osv
+
+- Tabell bloggdata
+Tabellnamn: blog
+Kolumner: 
+id (int) - primär
+title (varchar)
+text (text)
+catid (int)
+date_time (datetime)
+
+- Tabell användardata
+Tabellnamn:
+Kolumner:
+
+
+- Tabell kategorier
+Tabellnamn: cat
+Kolumner:
+catid (int) - primär
+category (varchar)
+
+
