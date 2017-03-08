@@ -32,7 +32,12 @@
         </form>";
         }
 
-
+  if (isset($_SESSION['uid'])) {
+  echo $_SESSION['uname'];
+  echo "You are now logged in!";
+} else {
+  echo "You are not logged in";
+}
          ?>
 
       </ul>
