@@ -5,7 +5,7 @@ Tabellnamn: blog
 Kolumner: 
 id (int) - primär
 title (varchar)
-text (varchar)
+text (text)
 catid (int)
 date_time (datetime)
 
