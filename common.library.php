@@ -11,7 +11,14 @@ function trim_string($str) {
   return $str;
 }
 
-$conn = mysqli_connect('localhost', 's152267', 'dSvHEzKd', 's152267');
+//server names and pw
+$server = 'localhost';
+$username = 's152267';
+$password = 'dSvHEzKd';
+$dbname = 's152267';
+
+//connection to server saved as string
+$conn = mysqli_connect($server, $username, $password, $dbname);
 
 if (!$conn) {
   die("Connection failed: " . mysqli_connect_error());
