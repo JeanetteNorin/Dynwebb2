@@ -1,14 +1,3 @@
-<!DOCTYPE html>
-<html>
-<head>
-<title>Blogg</title>
-<meta http-equiv="Content-Type" content="text/html" />
-<meta charset="UTF-8">
-<link rel="stylesheet" type="text/css" href="style.css">
-</head>
-
-<body>
-
 <?php
 date_default_timezone_set('Europe/Stockholm');
 include 'common.library.php';
