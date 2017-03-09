@@ -1,4 +1,8 @@
 <?php
+session_start();
+if(!isset($_SESSION['uid'])){
+   header("Location:index.php");
+}
 date_default_timezone_set('Europe/Stockholm');
 include 'common.library.php';
 include 'header.php';
