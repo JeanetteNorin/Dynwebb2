@@ -16,6 +16,7 @@ uid (int)
 uname (varchar)
 pwd (varchar)
 
+
 - Tabell kategorier
 Tabellnamn: cat
 Kolumner:

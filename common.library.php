@@ -13,9 +13,10 @@ function trim_string($str) {
 
 //server names and pw
 $server = 'localhost';
-$username = 's152267';
-$password = 'dSvHEzKd';
-$dbname = 's152267';
+$username = 'root';
+$password = '';
+$dbname = 'blogg';
+
 
 //connection to server saved as string
 $conn = mysqli_connect($server, $username, $password, $dbname);
@@ -23,6 +24,9 @@ $conn = mysqli_connect($server, $username, $password, $dbname);
 if (!$conn) {
   die("Connection failed: " . mysqli_connect_error());
 }
+
+
+//create drop down menu
 
 function create_dropdown($id,$pairs,$label,$selected,$multi="") {
   $dd = "<select name=\"$id\" $multi>";

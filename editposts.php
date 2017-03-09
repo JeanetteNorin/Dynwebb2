@@ -14,8 +14,10 @@ while (list($date, $title, $id) = mysqli_fetch_row($result)) {
   echo "<a href=\"editposts.php?id=$id\">$title</a>";
   echo "<p>$date</p>";
 }
-					
-if ($_GET['id']) {
+
+
+if (isset($_GET['id'])) {
+
   $id = $_GET['id'];
   $query = "SELECT text, title, id, catid FROM blog WHERE id='$id'";
   $result = mysqli_query($conn, $query);
@@ -23,13 +25,13 @@ if ($_GET['id']) {
   ?>
   <form method="post" action="editposts.php">
     <p>Titel<br />
-    <input type="text" name="title" size="50" 
-      value="<?php echo $title;?>" /></p>
+    <input type="text" name="title" size="50"
+    <input type="text" name="title" size="50" value="<?php echo $title;?>" /></p>
     <p>Text<br />
     <textarea name="text" cols="40" rows="10">
       <?php echo $text;?></textarea></p>
     <input type="text" name="id" value="<?php echo $id;?>" />
-    
+
     <p>Category:<br />
 	<?php
   $query = "SELECT catid, category FROM cat ORDER BY category";
@@ -45,9 +47,9 @@ if ($_GET['id']) {
 <p><input type="submit" name="submit" value="Update!" /></p>
   </form>
   <?php
-  }			
+  }
 }
- 
+
 if (isset($_POST['submit'])) {
 
 	$title = trim_string($_POST['title']);
@@ -55,10 +57,8 @@ if (isset($_POST['submit'])) {
 	$date = date("Y-m-d H:i:s");
 	$id = $_POST['id'];
 	$catid = $_POST['catid'];
-
 	$query = "UPDATE blog SET title='$title', text='$text',
 	date_time='$date', catid='$catid' WHERE id='$id'";
-
 	$result = mysqli_query($conn, $query);
 
 	if (!$result) {
@@ -70,7 +70,6 @@ if (isset($_POST['submit'])) {
 		echo "<p>Update successful!</p>";
 	}
 }
- 
 ?>
 
 </body>
