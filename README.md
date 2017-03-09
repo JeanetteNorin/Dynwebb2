@@ -17,4 +17,10 @@ Jobbar med just nu;
 
 Tar paus och inväntar dina tankar. CSS kan jag fortsätta med senare idag eller imorgon, om du vill.
 
-Jeanette: Läser igenom din kod för att hänga med lite i ändringarna. Försöker förstå varför inlogg fungerar på localhost för mig, men inte mot servern.
+Jeanette: Jobbar på dessa felmeddelanden (hojta till om du löst ngn :)..);
+
+Warning: mysql_fetch_array() expects parameter 1 to be resource, boolean given in C:\xampp\htdocs\dynwebb2\Dynwebb2\posts.php on line 47
+
+Notice: Undefined variable: pairs in C:\xampp\htdocs\dynwebb2\Dynwebb2\posts.php on line 52
+
+Warning: Invalid argument supplied for foreach() in C:\xampp\htdocs\dynwebb2\Dynwebb2\common.library.php on line 32
