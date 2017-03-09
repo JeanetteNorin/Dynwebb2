@@ -25,7 +25,9 @@ if (!$conn) {
   die("Connection failed: " . mysqli_connect_error());
 }
 
+
 //create drop down menu
+
 function create_dropdown($id,$pairs,$label,$selected,$multi="") {
   $dd = "<select name=\"$id\" $multi>";
   $dd .= "<option value=\"\">$label</option>";
@@ -39,7 +41,6 @@ function create_dropdown($id,$pairs,$label,$selected,$multi="") {
   $dd .= "</select>";
   return $dd;
 }
-
 
 
 ?>

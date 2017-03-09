@@ -12,9 +12,9 @@ date_time (datetime)
 - Tabell användardata
 Tabellnamn: user
 Kolumner:
-uid - primär
-uname 
-pwd
+uid (int)
+uname (varchar)
+pwd (varchar)
 
 
 - Tabell kategorier
