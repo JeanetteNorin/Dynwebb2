@@ -14,11 +14,15 @@
     <nav>
       <ul>
         <li><a href="index.php">HOME</a></li>
-        <li><a href="posts.php">WRITE</a></li>
-		<li><a href="editposts.php">EDIT</a></li>
-        <li><a href="deletepost.php">DELETE</a></li>
-		<li>
-        <?php
+       <?php
+	      //show editing if user is logged in
+	      
+		
+	      if (isset($_SESSION['uid'])) {
+          echo "<li><a href="posts.php">WRITE</a></li>
+	  <li><a href='editposts.php'>EDIT</a></li>
+          <li><a href='deletepost.php'>DELETE</a></li>";
+        }
 
         //show logout button if login-session is active
         if (isset($_SESSION['uid'])) {
