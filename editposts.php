@@ -1,23 +1,12 @@
-<!DOCTYPE html>
-<html>
-<head>
-<title>Edit post</title>
-<meta http-equiv="Content-Type" content="text/html" />
-<meta charset="UTF-8">
-<link rel="stylesheet" type="text/css" href="style.css">
-</head>
-<body>
- 
 <?php
 date_default_timezone_set('Europe/Stockholm');
 include 'common.library.php';
 include 'header.php';
-db_connect();
 
 $query = "SELECT date_time, title, id FROM blog ORDER BY title DESC";
  
-$result = mysql_query($query);
-while (list($date, $title, $id) = mysql_fetch_row($result)) {
+$result = mysqli_query($conn, $query);
+while (list($date, $title, $id) = mysqli_fetch_row($result)) {
   echo "<a href=\"editposts.php?id=$id\">$title</a>";
   echo "<p>$date</p>";
 }
@@ -25,8 +14,8 @@ while (list($date, $title, $id) = mysql_fetch_row($result)) {
 if ($_GET['id']) {
   $id = $_GET['id'];
   $query = "SELECT text, title, id, catid FROM blog WHERE id='$id'";
-  $result = mysql_query($query);
-  while (list($text, $title, $id, $catid) = mysql_fetch_row($result)) {
+  $result = mysqli_query($conn, $query);
+  while (list($text, $title, $id, $catid) = mysqli_fetch_row($result)) {
   ?>
   <form method="post" action="editposts.php">
     <p>Titel<br />
@@ -40,8 +29,8 @@ if ($_GET['id']) {
     <p>Category:<br />
 	<?php
   $query = "SELECT catid, category FROM cat ORDER BY category";
-  $result = mysql_query($query);
-  while($row = mysql_fetch_array($result)) {
+  $result = mysqli_query($conn, $query);
+  while($row = mysqli_fetch_array($result)) {
     $value = $row["catid"];
     $name = $row["category"];
     $pairs["$value"] = $name;
@@ -66,10 +55,10 @@ if (isset($_POST['submit'])) {
 	$query = "UPDATE blog SET title='$title', text='$text',
 	date_time='$date', catid='$catid' WHERE id='$id'";
 
-	$result = mysql_query($query);
+	$result = mysqli_query($conn, $query);
 
 	if (!$result) {
-		$message  = 'Invalid query: ' . mysql_error() . "\n";
+		$message  = 'Invalid query: ' . mysqli_error() . "\n";
 		$message .= 'Whole query: ' . $query;
 		die($message);
 	}
