@@ -21,9 +21,4 @@ Jeanette:
 Har löst felmeddelanden och uppdaterat filerna - hoppas jag inte stökat till något på din sida nu!
 Har ett meddelande kvar, något om dubbel session, men det är inte så viktigt tror jag. Ingen varning o påverkar inget. Kan titta på den sen. Jag slutar för dagen iaf!
 
-Har du den tabellen?
-- Tabell kategorier
-Tabellnamn: cat
-Kolumner:
-catid (int) - primär
-category (varchar)
+Ändrade i header-filen så att sidorna går att validera. Frågan är om vi måste ha med meddelandet om man är inloggad eller ej? Jag kommaterade bort det sålänge.
