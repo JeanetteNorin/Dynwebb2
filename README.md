@@ -16,3 +16,5 @@ http://bhsphp.utb.hb.se/~s151302/Dynwebb2-master/index.php
 Jobbar med just nu;
 
 Tar paus och inväntar dina tankar. CSS kan jag fortsätta med senare idag eller imorgon, om du vill.
+
+Jeanette: Läser igenom din kod för att hänga med lite i ändringarna. Försöker förstå varför inlogg fungerar på localhost för mig, men inte mot servern.
