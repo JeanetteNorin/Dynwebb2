@@ -24,3 +24,10 @@ Warning: mysql_fetch_array() expects parameter 1 to be resource, boolean given i
 Notice: Undefined variable: pairs in C:\xampp\htdocs\dynwebb2\Dynwebb2\posts.php on line 52
 
 Warning: Invalid argument supplied for foreach() in C:\xampp\htdocs\dynwebb2\Dynwebb2\common.library.php on line 32
+
+Har du den tabellen?
+- Tabell kategorier
+Tabellnamn: cat
+Kolumner:
+catid (int) - primär
+category (varchar)
