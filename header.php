@@ -15,6 +15,8 @@
       <ul>
         <li><a href="index.php">HOME</a></li>
         <li><a href="posts.php">WRITE</a></li>
+        <li><a href="editposts.php">EDIT</a></li>
+        <li><a href="deletepost.php">DELETE</a></li>
         <?php
 
         //show logout button if login-session is active
