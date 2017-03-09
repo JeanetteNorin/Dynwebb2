@@ -17,13 +17,9 @@ Jobbar med just nu;
 
 Tar paus och inväntar dina tankar. CSS kan jag fortsätta med senare idag eller imorgon, om du vill.
 
-Jeanette: Jobbar på dessa felmeddelanden (hojta till om du löst ngn :)..);
-
-Warning: mysql_fetch_array() expects parameter 1 to be resource, boolean given in C:\xampp\htdocs\dynwebb2\Dynwebb2\posts.php on line 47
-
-Notice: Undefined variable: pairs in C:\xampp\htdocs\dynwebb2\Dynwebb2\posts.php on line 52
-
-Warning: Invalid argument supplied for foreach() in C:\xampp\htdocs\dynwebb2\Dynwebb2\common.library.php on line 32
+Jeanette: 
+Har löst felmeddelanden och uppdaterat filerna - hoppas jag inte stökat till något på din sida nu!
+Har ett meddelande kvar, något om dubbel session, men det är inte så viktigt tror jag. Ingen varning o påverkar inget. Kan titta på den sen. Jag slutar för dagen iaf!
 
 Har du den tabellen?
 - Tabell kategorier
