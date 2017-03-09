@@ -1,36 +1,25 @@
-<!DOCTYPE html>
-<html>
-<head>
-<title>Delete post</title>
-<meta http-equiv="Content-Type" content="text/html" />
-<meta charset="UTF-8">
-<link rel="stylesheet" type="text/css" href="style.css">
-</head>
-
-<body>
-
 <?php
 date_default_timezone_set('Europe/Stockholm');
 include 'common.library.php';
 include 'header.php';
-db_connect();
+//db_connect();
 					
 if ($_GET['id']) {
   $id = $_GET['id'];
   $query = "DELETE FROM blog WHERE id='$id'";
-  $result = mysql_query($query);
-  if ((mysql_affected_rows() == 0) || (mysql_affected_rows() == -1)) {
-    echo "Ej borttaget!";
+  $result = mysqli_query($conn, $query);
+  if ((mysqli_affected_rows() == 0) || (mysqli_affected_rows() == -1)) {
+    echo "Borttaget!";
   }
   else {
-    echo "Borttaget!";
+    echo "Ej Borttaget!";
   }		
 }
  
 $query = "SELECT date_time, title, text, id FROM blog ORDER BY title DESC";
  
-$result = mysql_query($query);
-while (list($date, $title, $text, $id) = mysql_fetch_row($result)) {
+$result = mysqli_query($conn, $query);
+while (list($date, $title, $text, $id) = mysqli_fetch_row($result)) {
   echo "<a href=\"deletepost.php?id=$id\">$title</a>";
   echo "<p>$text</p>";
   echo "<p>$date</p>";
@@ -38,6 +27,5 @@ while (list($date, $title, $text, $id) = mysql_fetch_row($result)) {
  
 ?>
  
-</div>
 </body>
 </html>
