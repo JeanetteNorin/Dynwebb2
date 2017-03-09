@@ -37,7 +37,6 @@ if (isset($_POST['submit'])) {
 }	
  
 ?>
-<div id="container">
   <form method="post" action="posts.php">
     <p>Title<br />
     <input type="text" name="title" size="50" /></p>
