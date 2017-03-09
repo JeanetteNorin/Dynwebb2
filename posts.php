@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Write new blog post</title>
-<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+<title>Blogg</title>
+<meta http-equiv="Content-Type" content="text/html" />
+<meta charset="UTF-8">
+<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
 <?php
