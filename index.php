@@ -2,10 +2,12 @@
 <html>
 <head>
 <title>Blogg</title>
-<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+<meta http-equiv="Content-Type" content="text/html" />
+<meta charset="UTF-8">
+<link rel="stylesheet" type="text/css" href="style.css">
 </head>
-<body>
 
+<body>
 
 <?php
 date_default_timezone_set('Europe/Stockholm');
