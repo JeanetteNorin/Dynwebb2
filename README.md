@@ -10,6 +10,8 @@ Redigera och ta bort inlägg fungerar ok nu, men ser väldigt fult ut.
 
 Det går inte att redigera inlägg som inte har en titel, men det går att lägga in dom. 
 
+Ibland läggs saker in i separata filer som funktioner, som sedan bara anropas på html-sidorna (t.ex. å lägga all delete-funktionalitet i en funktion i en egen fil, och sen anropa den funktionen när man ska ta bort. Har funderat om detta är mer hållbart och/eller mindre rörigt. Ska fråga om det på nästa handledning.
+
 Har lagt upp på skolan server om du vill se.
 http://bhsphp.utb.hb.se/~s151302/Dynwebb2-master/index.php
 
