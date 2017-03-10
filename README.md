@@ -6,9 +6,9 @@ Saker att göra;
 
 Styla till hur bloggen ser ut
 
-Fixa så att det endast går att skriva inlägg när användaren är inloggad
-
 Redigera och ta bort inlägg fungerar ok nu, men ser väldigt fult ut. 
+
+Det går inte att redigera inlägg som inte har en titel, men det går att lägga in dom. 
 
 Har lagt upp på skolan server om du vill se.
 http://bhsphp.utb.hb.se/~s151302/Dynwebb2-master/index.php
