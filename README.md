@@ -18,8 +18,7 @@ Jobbar med just nu;
 Tar paus och inväntar dina tankar. CSS kan jag fortsätta med senare idag eller imorgon, om du vill.
 
 Jeanette: 
-Har löst felmeddelanden och uppdaterat filerna - hoppas jag inte stökat till något på din sida nu!
-Har ett meddelande kvar, något om dubbel session, men det är inte så viktigt tror jag. Ingen varning o påverkar inget. Kan titta på den sen. Jag slutar för dagen iaf!
+Jag leker lite med CSS:en idag en stund.
 
 Ändrade i header-filen så att sidorna går att validera. Frågan är om vi måste ha med meddelandet om man är inloggad eller ej? Jag kommaterade bort det sålänge. 
 Nej, det tänkte jag mest för felsökning! Men eventuellt att det står typ välkommen "användare" när man är inloggad? /Jeanette
