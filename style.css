@@ -64,3 +64,33 @@ button {
   cursor: pointer;
   margin-bottom: 60px;
 }
+
+.blog_posts {
+  margin: 50px;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+.blog_footer, .blog_title, .blog_content {
+  background-color: #a0bcb7;
+  border: solid white;
+  padding: 40px;
+  margin: 0;
+}
+
+.blog_content {
+  background-color: #b9ccc9;
+  min-height: 300px;
+
+}
+
+.blog_title h1 {
+  font-family: 'Diplomata SC', cursive;
+}
+p {
+  font-family: 'Raleway', sans-serif;
+}
+
+.post_input {
+  margin: 100px;
+}
