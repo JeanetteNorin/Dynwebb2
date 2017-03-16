@@ -15,7 +15,7 @@ x Stöd för taggning av blogginlägg (mellantabell krävs)
 
 x Stöd för läsarkommentering av blogginlägg (+ spamskydd)
 
-x Dynamiska visningsalternativ av blogginlägg
+x Dynamiska visningsalternativ av blogginlägg  - JOBBAR MED DENNA /JEANETTE
 
 x Ev kontrollruta innan borttagning av inlägg
 
