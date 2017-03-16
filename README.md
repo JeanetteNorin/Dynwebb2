@@ -4,12 +4,19 @@ Länk:
 http://bhsphp.utb.hb.se/~s151302/Dynwebb2-master/index.php
 
 Saker vi kan jobba med;
+
 x Styling
+
 x Dokumentation om vad koden utför
+
 x Flödesschema
+
 x Stöd för taggning av blogginlägg (mellantabell krävs)
+
 x Stöd för läsarkommentering av blogginlägg (+ spamskydd)
+
 x Dynamiska visningsalternativ av blogginlägg
+
 x Ev kontrollruta innan borttagning av inlägg
 
 
