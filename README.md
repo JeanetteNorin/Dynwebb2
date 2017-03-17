@@ -19,11 +19,8 @@ x Dynamiska visningsalternativ av blogginlägg  - JOBBAR MED DENNA /JEANETTE
 
 x Ev kontrollruta innan borttagning av inlägg
 
+(x Vid tid över - lägg funktioner i separat dokument och anropa dem från sidorna (frågade tuve om detta o han menade att det var bättre att göra så, det är dock inget vi får betyg på, så det kan vi ju göra i mån av tid) )
 
 
 
-
-Tankar att ha med till handledningen eller diskutera;
-
-x Ibland läggs saker in i separata filer som funktioner, som sedan bara anropas på html-sidorna (t.ex. å lägga all delete-funktionalitet i en funktion i en egen fil, och sen anropa den funktionen när man ska ta bort. Har funderat om detta är mer hållbart och/eller mindre rörigt. Ska fråga om det på nästa handledning.
 
