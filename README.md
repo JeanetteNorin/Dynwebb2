@@ -7,7 +7,7 @@ Saker vi kan jobba med;
 
 x Styling
 
-x Dokumentation om vad koden utför
+x Dokumentation om vad koden utför - HAR PÅBÖRJAT DETTA / CICCI
 
 x Flödesschema
 
