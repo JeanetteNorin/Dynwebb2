@@ -7,14 +7,14 @@ SKÄRMDUMP
 En fråga görs till databasen och samtliga blogginlägg visas. 
 Här kan användaren ange användarnamn och lösenord för att logga in. 
 Om rätt användarnamn och lösenord anges startar en session och 
-användarens slussas vidare till en sida där det fås tillgång till sidor för att administrera bloggen.
+användaren får tillgång till en meny med sidor (adminpanel) för att administrera bloggen.
 
 
 Startsida efter inloggning
 SKÄRMDUMP
 - Vad koden utför
 Kontrollerar om användaren är inloggad. 
-Om så är fallet visas adminpanel, annars leds användaren till indexsidan (startsidan) för att kunna logga in. 
+Om så är fallet visas en meny med sidor (adminpanel), annars leds användaren till indexsidan (startsidan) för att kunna logga in. 
 En fråga görs till databasen och samtliga blogginlägg visas.
 
  
