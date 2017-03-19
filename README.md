@@ -9,7 +9,7 @@ x Styling
 
 x Dokumentation om vad koden utför - HAR PÅBÖRJAT DETTA / CICCI (Hur avancerat tror du vi behöver skriva här? Bara enkelt vad koden gör och kanske skärmdumpar, eller vad säger du?)
 
-x Flödesschema
+x Flödesschema HAR PÅBÖRJAT DETTA / CICCI
 
 x Stöd för taggning av blogginlägg (mellantabell krävs)
 
