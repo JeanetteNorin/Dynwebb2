@@ -66,7 +66,7 @@ if (isset($_GET['id'])) {
 }
 
 // Performs a query to the database
-$query = "SELECT date_time, title, text, id FROM blog ORDER BY title DESC";
+$query = "SELECT date_time, title, text, id FROM blog ORDER BY date_time DESC";
 $result = mysqli_query($conn, $query);
 
 // Loops through query and shows list of result
