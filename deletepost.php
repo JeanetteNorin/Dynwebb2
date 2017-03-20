@@ -4,6 +4,7 @@ session_start();
 if(!isset($_SESSION['uid'])){
    header("Location:index.php");
 }
+
 date_default_timezone_set('Europe/Stockholm');
 include 'common.library.php';
 include 'header.php';
@@ -14,31 +15,21 @@ if (isset($_GET['id'])) {
   $query = "DELETE FROM blog WHERE id='$id'";
   $result = mysqli_query($conn, $query);
   if ((mysql_affected_rows() == 0) || (mysql_affected_rows() == -1)) {
-					
-if ($_GET['id']) {
-  $id = $_GET['id'];
-  $query = "DELETE FROM blog WHERE id='$id'";
-  $result = mysqli_query($conn, $query);
-  if ((mysqli_affected_rows() == 0) || (mysqli_affected_rows() == -1)) {
-    echo "Borttaget!";
-  }
-  else {
-    echo "Ej Borttaget!";
-  }
-}
-$query = "SELECT date_time, title, text, id FROM blog ORDER BY title DESC";
-  }		
+	echo "Borttaget!";
+	}
+	else {
+		echo "Ej Borttaget!";
+	}
 }
 
 //Performs a query to database and shows list of posts
-$query = "SELECT date_time, title, text, id FROM blog ORDER BY title DESC";
+$query = "SELECT date_time, title, text, id FROM blog ORDER BY date_time DESC";
 $result = mysqli_query($conn, $query);
 while (list($date, $title, $text, $id) = mysqli_fetch_row($result)) {
- 
- echo "<div class=blog_posts>
-		  <div class=blog_title><h2>$title</h2></div>
-	      <div class=blog_content><p>$text</p></div>
-	      <div class=blog_footer><a href=\"deletepost.php?id=$id\">Delete</a></div></div>";
+  echo "<div class=blog_posts>
+		<div class=blog_title><h2>$title</h2></div>
+	    <div class=blog_content><p>$text</p></div>
+	    <div class=blog_footer><a href=\"deletepost.php?id=$id\">Delete</a></div></div>";
 }
 ?>
  
