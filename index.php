@@ -57,8 +57,11 @@ switch ($sort) {
     break;
 
   case 'category':
-  $query = "SELECT date_time, text, title, catid FROM blog
- ORDER BY catid DESC";
+  $query = "SELECT blog.date_time, blog.text, blog.title, blog.catid
+  FROM blog
+  INNER JOIN cat
+  ON blog.catid = cat.catid
+  ORDER BY category DESC";
  $result = mysqli_query($conn, $query);
  while (list($date, $text, $title, $catid) = mysqli_fetch_row($result)) {
   $query2 = "SELECT category FROM cat WHERE catid='$catid'";
