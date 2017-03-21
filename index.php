@@ -23,7 +23,7 @@ if (!empty($sort)) { // If you Sort it with value of your  select options
 
 switch ($sort) {
   case 'title':
-  $query = "SELECT date_time, text, title, catid FROM blog
+  $query = "SELECT blog.date_time, blog.text, blog.title, blog.catid FROM blog
  ORDER BY title ASC";
  $result = mysqli_query($conn, $query);
  while (list($date, $text, $title, $catid) = mysqli_fetch_row($result)) {
@@ -83,10 +83,20 @@ switch ($sort) {
   echo "Val.";
 
 } else { // else if you do not pass any value from select option will return this
-   $query = "SELECT date_time, text, title, catid FROM blog
-  ORDER BY date_time DESC";
-
-  echo "Inget val.";
+  $query = "SELECT date_time, text, title, catid FROM blog
+ ORDER BY date_time ASC";
+ $result = mysqli_query($conn, $query);
+ while (list($date, $text, $title, $catid) = mysqli_fetch_row($result)) {
+  $query2 = "SELECT category FROM cat WHERE catid='$catid'";
+  $result2 = mysqli_query($conn, $query2);
+  while ($row2 = mysqli_fetch_array($result2)) {
+    $cat = $row2['category'];
+  }
+  echo "<div class=blog_posts>
+           <div class=blog_title><h2>$title</h2></div>
+        <div class=blog_content><p>$text</p></div>
+        <div class=blog_footer><p> $date <br> Category: $cat</p></div></div>";
+ }
 
 }
 
