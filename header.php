@@ -34,25 +34,15 @@
         }
         //show login button if logged out
         else {
-           echo "<form action='login.php' method='POST'>
+           echo "<li><form action='login.php' method='POST'>
           <input type='text' name='uname' placeholder='Username'>
           <input type='password' name='pwd' placeholder='Password'>
           <button name='loginSubmit' type='submit'>LOG IN</button>
-        </form>";
+        </form></li>";
         }
-	      
-	/*  if (isset($_SESSION['uid'])) {
-  	echo $_SESSION[''];
-  	echo "You are now logged in!";
-	} else {
-  	echo "You are not logged in";
-	}*/
-	
+		
 	?>
 		
       </ul>
     </nav>
   </header>
-
-
-		
