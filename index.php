@@ -4,10 +4,9 @@ include 'common.library.php';
 include 'header.php';
 
 //drop down menu to choose order of posts
-echo "<p>Sort by<br /></p>
-      <form name='sort' class='sort_form' action='index.php' method='post'>
+echo "<form name='sort' class='sort_form' action='index.php' method='post'>
         <select name = 'order'>
-	       <option value='choose'>Make A Selection</option>
+	 <option value='choose'>Sort by</option>
          <option value='title'>Title</option>
          <option value='date_time'>Date posted</option>
          <option value='category'>Category</option>
