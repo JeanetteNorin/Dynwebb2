@@ -3,7 +3,7 @@ date_default_timezone_set('Europe/Stockholm');
 include 'common.library.php';
 include 'header.php';
 
-//drop down menu tio choose order of posts
+//drop down menu to choose order of posts
 echo "<p>Sort by<br /></p>
       <form name='sort' class='sort_form' action='index.php' method='post'>
         <select name = 'order'>
@@ -12,13 +12,12 @@ echo "<p>Sort by<br /></p>
          <option value='date_time'>Date posted</option>
          <option value='category'>Category</option>
         </select>
-        <p><input type='submit' method='POST' name='submit' action='index.php' value='Update!' /></p>
-      </div>
+        <p><input type='submit' method='POST' name='submit' value='Update!' /></p>
       </form>"
 
 $sort = @$_POST['order'];
 
-if (!empty($sort)) { // If you sort it with value of your  select options
+if (!empty($sort)) {
   //sort in order of choice from drop down menu
   switch ($sort) {
     case 'title':
