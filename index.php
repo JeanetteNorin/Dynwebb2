@@ -4,15 +4,19 @@ include 'common.library.php';
 include 'header.php';
 
 //drop down menu to choose order of posts
-echo "<form name='sort' class='sort_form' action='index.php' method='post'>
+echo "<div id='title_container'>
+      <div id='title_header'><h1>Cicci & Jeanette's blog</h1></div>
+      <div id='sort_form'><p>SORT BLOG POSTS BY<br /></p>
+      <form name='sort' class='sort_form' action='index.php' method='post'>
         <select name = 'order'>
-	 <option value='choose'>Sort by</option>
+	       <option value='choose'>Make A Selection</option>
          <option value='title'>Title</option>
          <option value='date_time'>Date posted</option>
          <option value='category'>Category</option>
         </select>
-        <p><input type='submit' method='POST' name='submit' value='Update!' /></p>
-      </form>"
+        <p><input type='submit' method='POST' name='submit' action='index.php' value='Update!' /></p>
+      </div></div>
+      </form>";
 
 $sort = @$_POST['order'];
 
