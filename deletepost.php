@@ -15,10 +15,10 @@ if (isset($_GET['id'])) {
   $query = "DELETE FROM blog WHERE id='$id'";
   $result = mysqli_query($conn, $query);
   if ((mysql_affected_rows() == 0) || (mysql_affected_rows() == -1)) {
-	echo "Borttaget!";
+	echo "Deleted!";
 	}
 	else {
-		echo "Ej Borttaget!";
+		echo "Not deleted!";
 	}
 }
 
